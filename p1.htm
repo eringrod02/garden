@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>garden view - sunflower</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<style>
+        body{
+            background-image: url(images/Sunflower-field.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header{
+            position: relative;
+            text-align: center;
+            font-family: "Caveat";
+            font-size: 20px;
+            border-style: solid;
+            border-width: 10px;
+            border-color: rgb(255, 224, 23);
+            border-radius: 30px;
+            color: white;
+        }
+       .snflwr{
+        position: absolute;
+       }
+        .pos-1{
+       right: 20%;
+       cursor: pointer;
+       }
+
+       .pos-2{
+        left: 0%;
+        bottom: 0%;
+        cursor: pointer;
+       }
+       .pos-3{
+        left: 25%;
+        bottom: 0%;
+        cursor: pointer;
+       }
+       .pos-4{
+        right: 5%;
+        bottom: 14%;
+        cursor: pointer;
+       }
+       
+       .popup{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 25px;
+        border-style: solid;
+        border-color: yellow;
+        border-width: 5px;
+        width: 500px;
+        z-index: 999;
+    }   
+        .popup-content{
+        padding: 1vw;
+        font-family: "Caveat";
+        font-size: 30px;
+    }
+        .hidden{
+        display: none;
+    }
+        #closePopup{
+        align-self: flex-end;
+        cursor: pointer;
+    }
+    </style>
+     
+</head>
+<body>
+
+     <div class="header">
+    <h1>Erin's Thought Library</h1>
+    <p> A digital garden of my thoughts over the semester</p>
+     </div>
+    
+     <a href="index.html">
+        <button id="viewGarden" type="button">grid</button>
+    </a>
+
+    <a href="p2.htm">
+        <button>poppy</button>
+    </a>
+    <a href="p3.htm">
+        <button>rose</button>
+    </a>
+    <img class="snflwr pos-1" src="images/sunflower.png" width="300px">
+    <img class="snflwr pos-2" src="images/whole sunflower.png" width="300px">
+    <img class="snflwr pos-3" src="images/whole sunflower ver2.png" width="400px">
+    <img class="snflwr pos-4" src="images/sunflower.png" width="150px">
+  
+ 
+    
+
+<div id="popup" class="popup hidden">
+    <div class="popup-content">
+        <button id="closePopup">X</button>
+        <h3 id="popupTitle"></h3>
+        <p id="popupBody"></p>
+    </div>
+</div>    
+
+   
+
+
+
+   <script src="data2.js"></script>
+   <script src="script2.js"></script>
+</body> 
+</html>

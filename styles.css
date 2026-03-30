@@ -2,18 +2,22 @@
   position: relative;
   text-align: center;
   font-family: "Caveat";
-  font-size: 30px;
-  border-style: solid;
-  border-width: 10px;
-  border-color: rgb(165, 116, 76);
-  border-radius: 30px;
+  font-size: 70px;
   color: white;
+  font-weight: bold;
+  line-height: 2%;
+  top: 4vh;
 }
 body{
   font-family: "Caveat";
   background:#513521;
   margin:40px;
+  background-image: url(images/record-card.png);
+  background-repeat: no-repeat;
+  background-size: 1250px 500px;
+  background-position: center;
 }
+
 
 /* container */
 #garden{
@@ -107,5 +111,13 @@ color:#666;
 #closePopup{
   float: right;
   cursor: pointer;
+}
+button{
+  background-color: rgb(186, 164, 112);
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
